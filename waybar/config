@@ -6,13 +6,13 @@
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     //"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
-    "modules-left": ["wlr/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     //"modules-center": ["sway/window"],
     "modules-center": ["hyprland/window"],
     //"modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
     "modules-right": ["tray", "mpd", "pulseaudio", "cpu", "memory", "temperature", "clock"],
     // Modules configuration
-     "wlr/workspaces": {
+     "hyprland/workspaces": {
          "disable-scroll": true,
          "all-outputs": true,
          //"format": "{name}: {icon}",
@@ -26,7 +26,9 @@
              "5": "5",
              "6": "6",
              "7": "7",
-             "8": "8"
+             "8": "8",
+	     "9": "9",
+	     "10": "10"
          }
      },
     "keyboard-state": {
