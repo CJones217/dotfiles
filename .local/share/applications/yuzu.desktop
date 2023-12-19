@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Yuzu
+Comment=Nintendo Switch Emulator
+Exec=/home/bloopers/Applications/yuzu-mainline-20230512-dc0ea2f7f.AppImage
+Icon=/home/bloopers/.local/share/icons/hicolor/32x32/apps/yuzu.png
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/ror2mm;
