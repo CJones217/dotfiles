@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=electrum bitcoin wallet
+Comment=bitcoin wallet
+Exec=/home/bloopers/Applications/electrum-4.2.2-x86_64.AppImage
+Icon=/home/bloopers/.local/share/icons/hicolor/32x32/apps/Electrum_512.png
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/ror2mm;

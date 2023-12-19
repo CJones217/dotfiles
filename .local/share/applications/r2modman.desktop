@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=r2modman
+Comment=mod launcher for lethal company
+Exec=/home/bloopers/Applications/r2modman-3.1.45.AppImage
+Icon=/home/bloopers/.local/share/icons/hicolor/32x32/apps/r2modmanicon.png
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/ror2mm;
