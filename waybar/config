@@ -21,7 +21,7 @@
     //"modules-right": ["mpd", "pulseaudio", "cpu", "memory", "temperature", "backlight", "keyboard-state", "sway/language", "battery", "battery#bat2", "clock", "tray"],
 
     
-    "modules-right": ["cpu", "memory", "temperature", "clock"],
+    "modules-right": ["cpu", "memory", "temperature", "custom/networktraffic", "clock"],
 },
 {
     "reload_style_on_change": true,
