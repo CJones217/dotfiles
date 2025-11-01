@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Obsidian
+Comment=Note taking software
+Exec=/home/bloopers/Applications/Obsidian-1.8.10.AppImage
+Icon=/home/bloopers/.local/share/icons/hicolor/16x16/apps/obsidian.png
+Terminal=false
+Type=Application
+MimeType=x-scheme-handler/ror2mm;
