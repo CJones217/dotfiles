@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# written by bloopers
+# you will need dmenu, notify-send, and xclip installed. FireFox is just optional.
+# add a file to your .local/share folder with the following format
+# {CHANNEL NAME};https://www.youtube.com/{LINK TO CHANNEL}
+
+dmenu_output="$(cat $HOME/.local/share/youtube | dmenu -p "Select Channel: " -l 15)"
+names=$(cut -d';' -f1 <<< "$dmenu_output")
+links=$(cut -d';' -f2 <<< "$dmenu_output")
+
+echo "$links" | xclip -sel c
+notify-send "'$names' copied to clipboard"
+
+if [ -x "$(command -v firefox)" ]; then
+	firefox --new-tab "$links"
+fi

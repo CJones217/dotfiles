@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#Written by Bloopers
+
+#below only works with xorg
+#import -window root ~/pix/$(date '+%Y%m%d-%H%M%S').png
+#notify-send "screenshot saved"
+
+
+#below works with wayland
+grim ~/pix/screenshots/$(date '+%Y%m%d-%H%M%S.png')
+notify-send "screenshot saved"
+

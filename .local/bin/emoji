@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# written by bugswriter
+# edits by bloopers
+
+
+emoji="$(cat $HOME/.local/share/emoji | dmenu -p "Select Emoji: " -l 15 | cut -d' ' -f1)"
+echo "$emoji" | tr "\n" " " | xclip -sel c
+notify-send "'$emoji' copied to clipboard"

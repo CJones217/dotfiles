@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Module for viewing packages that need to be updated.
+# written by Bloopers
+
+
+y=$(yay -Qua | wc -l)
+x=$(pacman -Qu | wc -l)
+printf "📦 %d 🧰 %d\\n" $x $y

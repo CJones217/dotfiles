@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#Written by Bloopers
+#dependencies: mpv, dmenu, notify-send
+
+base_path="$HOME/music/mp3/"
+path="$base_path$(ls $base_path | dmenu -p "Select Music: " -l 15 | cut -d' ' -f1)"
+
+pkill -f $path || mpv --no-audio-display --shuffle "$path"
