@@ -1,0 +1,8 @@
+width=25%
+height=50%
+location=center
+show=drun
+prompt=Search...
+insensitive=true
+allow_images=true
+gtk_dark=true

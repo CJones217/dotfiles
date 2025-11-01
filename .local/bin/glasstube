@@ -1,0 +1,22 @@
+#!/bin/sh
+
+dmenu_output="$(cat $HOME/.local/share/youtube2 | dmenu -p "Select Channel: " -l 15)"
+names=$(cut -d';' -f1 <<< "$dmenu_output")
+links=$(cut -d';' -f2 <<< "$dmenu_output")
+
+echo "$links" | xclip -sel c
+notify-send "'$names' selected"
+
+RSS_FEED_LINK=$(curl -s "$links" | sed -n 's/.*href="\([^"]*videos\.xml\?[^"]*\)".*/\1/p')
+
+RSS_FEED=$(curl -s "$RSS_FEED_LINK")
+
+VIDEOS=$(echo "$RSS_FEED" | grep -i "media:title" | cut -d'>' -f2 | cut -d'<' -f1)
+
+dmenu_videos=$(echo "$VIDEOS" | dmenu -p "Select Video:" -l 5)
+
+videos_link=$(echo "$RSS_FEED" | grep -A 1 "$dmenu_videos" | tail -n 1 | grep -i "media:content url" | cut -d'"' -f2)
+
+notify-send "playing video '$videos_link'"
+
+mpv $videos_link

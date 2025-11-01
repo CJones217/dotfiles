@@ -1,0 +1,6 @@
+[Desktop Entry]
+Exec=swayimg
+MimeType=image/jpeg;
+Name=swayimg
+NoDisplay=true
+Type=Application
