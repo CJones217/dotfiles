@@ -8,6 +8,10 @@
 
 
 #below works with wayland
-grim ~/pix/screenshots/$(date '+%Y%m%d-%H%M%S.png')
+
+timestampfile=$(date '+%Y%m%d-%H%M%S.png')
+timestampfilepath="$HOME/pix/screenshots/$timestampfile"
+
+grim -g "$(slurp -o)" "$timestampfilepath" && wl-copy < "$timestampfilepath"
 notify-send "screenshot saved"
 
