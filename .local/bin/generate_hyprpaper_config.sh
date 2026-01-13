@@ -16,15 +16,25 @@ WALLPAPER2="$WALLPAPER_ROOT/$RANDOM_WALLPAPER_DIR2/$RANDOM_WALLPAPER2"
 #generate hyprpaper config and overwrite the old one
 
 cat > ~/.config/hypr/hyprpaper.conf << EOF
-# This config is auto generated
+#This config is auto generated
 
 splash=false
 
 preload = $WALLPAPER
 preload = $WALLPAPER2
 
-wallpaper = DP-2,$WALLPAPER
-wallpaper = HDMI-A-1,$WALLPAPER2
+#wallpaper = DP-2,$WALLPAPER
+#wallpaper = HDMI-A-1,$WALLPAPER2
+
+wallpaper{
+	monitor = DP-2
+	path = $WALLPAPER
+}
+
+wallpaper{
+	monitor = HDMI-A-1
+	path = $WALLPAPER2
+}
 
 EOF
 
