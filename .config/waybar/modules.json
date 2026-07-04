@@ -88,14 +88,14 @@
     },
     "cpu": {
 	// this is the percent used of the cpu
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         //"tooltip": false
 	//"tooltip-format": "<tt><small>{usage0}</small></tt>"
 	"format-alt": "load {load}"
     },
     "memory": {
 	//this is the percent used of the memory
-        "format": "{}% ",
+        "format": "{}% 🖫 ",
 	"format-alt": "{used}GB/{total}GB"
     },
     "temperature": {
@@ -158,22 +158,23 @@
         },
         "on-click": "pavucontrol"
     },
-    "custom/media": {
-        "format": "{icon} {}",
-        "return-type": "json",
-        "max-length": 40,
-        "format-icons": {
-            "spotify": "",
-            "default": "🎜"
-        },
-        "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    },
     "custom/networktraffic":{
 	"format": "{}",
 	"interval": 2,
 	"exec": "~/.local/bin/custom_waybar/nettraf"
+    },
+    "mpris": {
+	"format": "{player_icon} {dynamic}",
+	"format-paused": "{status_icon} <i>{dynamic}</i>",
+    "interval": 2,
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
     }
 }
 

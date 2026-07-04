@@ -36,6 +36,6 @@
 
     "modules-left": ["tray"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "mpd", "clock"],
+    "modules-right": ["pulseaudio", "mpd", "mpris", "clock"],
 },
 ]
