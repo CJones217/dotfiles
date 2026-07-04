@@ -20,9 +20,9 @@ hl.workspace_rule({
 
 
 hl.on("hyprland.start", function () 
-  hl.exec_cmd(programs.wallpaperScript)
+  hl.exec_cmd(programs.wallpaperScript .. " && hyprpaper")
   hl.exec_cmd("foot --server")
-  hl.exec_cmd("waybar & hyprpaper & dunst")
+  hl.exec_cmd("waybar & dunst")
   hl.exec_cmd(programs.gameLauncher)
   hl.exec_cmd(programs.browser)
 end)
