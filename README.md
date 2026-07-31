@@ -2,7 +2,7 @@
 
 - swayimg
 - dolphin
-- wofi
+- rofi
 - screenshots
   - grim
   - slurp
@@ -12,3 +12,4 @@
 - sxiv
 - pcmanfm
 - Ulauncher
+- wofi
