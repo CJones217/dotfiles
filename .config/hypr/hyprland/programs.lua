@@ -6,7 +6,7 @@
 -- Set programs that you use
 local terminal        = "foot"
 local fileManager     = "dolphin"
-local menu            = "wofi"
+local menu            = "rofi -show combi"
 local lockscreen      = "hyprlock"
 local browser         = "firefox"
 local screenshots     = "screenshot"
