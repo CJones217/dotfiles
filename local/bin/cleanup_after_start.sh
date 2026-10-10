@@ -1,4 +1,4 @@
-sleep 30
-hyprctl keyword windowrule "workspace unset, firefox"
-hyprctl keyword windowrule "workspace unset, steam"
-hyprctl keyword windowrule "workspace unset, qbittorrent"
+sleep 20
+hyprctl keyword windowrulev2 "workspace = unset, class:firefox"
+hyprctl keyword windowrulev2 "workspace = unset, class:steam"
+hyprctl keyword windowrulev2 "workspace = unset, class:qbittorrent"
