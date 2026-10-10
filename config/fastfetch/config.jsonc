@@ -4,70 +4,70 @@
     "title",
     "separator",
     {
-	   "type": "os",
-	   "key": " OS",
-	   "keyColor": "blue"
+	    "type": "os",
+	    "key": " OS",
+	    "keyColor": "blue"
     },
     {
-	   "type": "kernel",
-	   "key": "⛰ Kernel",
-	   "keyColor": "blue"
+	    "type": "kernel",
+	    "key": "⛰ Kernel",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "Board",
-	   "key": "🖳 Board",
-	   "keyColor": "blue"
+	    "type": "Board",
+	    "key": "🖳 Board",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "cpu",
-	   "key": " CPU",
-	   "keyColor": "blue",
-	   "format": "{1} ({4}) @ {7} {temperature}"
+	    "type": "cpu",
+	    "key": " CPU",
+	    "keyColor": "blue",
+	    "format": "{1} ({4}) @ {7} {temperature}"
     },
     {
-	   "type": "GPU",
-	   "key": "🖭 GPU",
-	   "keyColor": "blue"
+	    "type": "GPU",
+	    "key": "🖭 GPU",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "memory",
-	   "key": "🖫 memory",
-	   "keyColor": "blue"
+	    "type": "memory",
+	    "key": "🖫 memory",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "swap",
-	   "key": "🖫 swap",
-	   "keyColor": "blue"
+	    "type": "swap",
+	    "key": "🖫 swap",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "disk",
-	   "key": "🗁 disk",
-	   "keyColor": "blue"
+	    "type": "disk",
+	    "key": "🗁 disk",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "display",
-	   "key": "🖵 display",
-	   "keyColor": "blue"
+	    "type": "display",
+	    "key": "🖵 display",
+	    "keyColor": "blue"
 
     },
     {
-	   "type": "mouse",
-	   "key": "🖰 mouse",
-	   "keyColor": "blue"
+	    "type": "mouse",
+	    "key": "🖰 mouse",
+	    "keyColor": "blue"
 
     },
     "separator",
     "packages",
     {
-	   "type": "packages",
-	   "key": "packages",
-	   "keyColor": "white "
+	    "type": "packages",
+	    "key": "packages",
+	    "keyColor": "white "
 
     },   
     "shell",
