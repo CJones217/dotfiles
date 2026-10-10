@@ -33,3 +33,4 @@ x-scheme-handler/http=firefox.desktop;
 x-scheme-handler/https=firefox.desktop;
 x-scheme-handler/postman=Postman.desktop;
 x-scheme-handler/ror2mm=r2modman.desktop;
+x-scheme-handler/discord=vesktop.desktop
