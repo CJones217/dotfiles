@@ -6,6 +6,7 @@
 - screenshots
   - grim
   - slurp
+- vesktop
 
 ## Software I used to use
 
