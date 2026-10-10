@@ -9,7 +9,8 @@ local secondMod = "ALT"
 
 --general binds for system actions
 hl.bind(mainMod .. " + SHIFT + C", hl.dsp.window.close()) -- close current focused window
-hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")) -- I think this shutsdown hyprland?
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("hyprshutdown")) -- shuts down hyprland
+hl.bind(secondMod .. " + SHIFT + Q", hl.dsp.exec_cmd("hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'")) -- shuts down hyprland and computer
 hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd(programs.lockscreen)) --runs lockscreen
 
 -- binds to open programs
