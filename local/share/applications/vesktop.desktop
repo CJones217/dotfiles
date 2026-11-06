@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Vesktop
 Comment=client for discord
-Exec=/home/bloopers/Applications/Vesktop-1.6.7.AppImage --ozone-platform-hint=auto %U
+Exec=/home/bloopers/Applications/Vesktop-1.6.9.AppImage --ozone-platform-hint=auto %U
 Icon=/home/bloopers/.local/share/icons/hicolor/16x16/apps/vesktop.svg
 Terminal=false
 Type=Application
